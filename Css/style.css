@@ -1,0 +1,106 @@
+
+.navbar{
+    /* .navbar : det är background color för navbar*/
+    background-color: black;
+
+}
+
+.nav-link{
+    /* vi har bytt font family till namna som sport och bytt färge för att den blir finare och lite yta mellan de*/
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    color: white;
+    margin-left: 30px;
+}
+a.nav-link {
+    /* lite yta mellan sport och Politics och Economie  de blir finare*/
+    padding-left: 1.5rem;
+}
+
+.btn{
+    /* vi har bytt färge till input "search" som ligger där uppe till höger */
+    color:white;
+
+}
+.navbar-toggler-icon{
+     /* vi gav button red fägre för att när våra hemsiada blir  mindre så kommer button att försvan för att navbar färge är svart. */
+background-color:red
+}
+
+#col-sm-4-Politics-1,#col-sm-4-Politics-3{
+    /*col-sm-4-Politics-1 : de är 9 div som ligger inner col-sm-8 som finns där uppe av hemsidan "Politics" */
+    /*col-sm-4-Politics-2 : de är 9 div som ligger inner  row som finns i mitten av hemsidan "Politics" */
+    background-color:white;
+    width: 300px;
+    height: 520px;
+    border: 6px solid white;
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+    float: left;
+}
+.bilder-1{
+    /* bilder: de är bilderna från 1 till 9 som ligger i div: col-sm-4 som finns i col-sm-8 där uppe av hemsidan "Politics "*/
+    width: 100%;
+    height: 200px;
+}
+#col-sm-4-Politics-2{
+   /*col-sm-4-Politics-2: den där div som ligger där uppe till höger av hemsidan "Politics " inner den div finns 3 li och 3 p och 3 img*/
+    height: 1450px;
+    overflow: hidden;
+}
+li{
+    /* för att punkter visa inte i col-sm-4-Politics-2 */
+    list-style: none;
+}
+#bilder-2{
+    /* bilder-2: de är 9 bilderna till div col-sm-4-Politics-3 som finns i mitten av hemsida  */
+    width: 100%;
+    height: 300px;
+}
+#bildar-3{
+    /* bildar-3: de är tio bildar till div col-sm-6 som ligger nere i hemsidan */
+    width: 100%;
+    height: 274px;
+ }
+ #img-1-sport{
+     /*mg-1-sport: de är bildrna som ligger i sportshemsida  */
+    width: 100%;
+    height: 300px;
+}
+ #col-sm-3-economie{
+   /*col-sm-3-economie: de är 8 div som ligger nere av EconomiesHemsida */
+    height: 430px;
+    border: 10px solid white;
+    width: 374px ;
+    float: left
+ }
+ 
+ #bilder3-ecomomie{
+     /*bilder3-ecomomie: de är  8 bilder som ligger nere av EconomiesHemsida*/
+    height: 170px;
+    width: 300px;
+ }
+ 
+
+/* vi gjorde den här med media så att när vi göra våra hemsida mindra kommer de inte att försvan*/
+ @media  screen and (min-height:568px){
+    .col-sm-4 {
+        height: 33,3333%;
+    }
+    .col-sm-8{
+        height: 75%;
+    } 
+    .col-sm-6{
+        height: 50%;
+    } 
+    .col-sm-2{
+        height: 25%;
+    } 
+    .row{
+        height: 100%;
+    } 
+    
+    
+    }
+    

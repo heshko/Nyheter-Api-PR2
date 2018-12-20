@@ -1,0 +1,50 @@
+
+  <section  ng-controller="contol1" id="politics">
+    <section class="row" id="section2">
+    <div class="col-sm-8">
+      <div class="col-sm-4" id="col-sm-4-Politics-1" ng-repeat="new in news | filter:search">
+        <img class="bilder-1" src="{{new.urlToImage}}">
+        <h5>{{new.title}}</h5>
+        <p>{{new.description}}</p>
+      </div>
+    </div>
+    <div class="col-sm-4" id="col-sm-4-Politics-2">
+        <li><img class="card-img-top" src="{{news4[0].urlToImage}}"></li>
+        <li><h5>{{news4[0].title}}</h5></li>
+        <li><p>{{news4[0].description}}</p></li>
+        <li><img class="card-img-top" src="{{news4[1].urlToImage}}"></li>
+        <li><h5>{{news4[1].title}}</h5></li>
+        <li><p>{{news4[1].description}}</p></li>
+        <li><img class="card-img-top" src="{{news4[2].urlToImage}}"></li>
+        <li><h5>{{news4[2].title}}</h5></li>
+        <li><p>{{news4[2].description}}</p></li>
+    </div>
+  </section>
+    <br>
+    <section class="row" >
+        <div class="col-sm-4" id="col-sm-4-Politics-3" ng-repeat="nyhet in news2 | filter:search" id="col4">
+          <img id="bilder-2"class="card-img-top" src="{{nyhet.urlToImage}}" alt="Card image cap">
+            <h4 class="card-title">{{nyhet.title}}</h4>
+            <p class="card-text">{{nyhet.description}}</p>
+          </div>
+    
+        
+  </section>
+  <br>
+  <section class="row">
+  
+      <div class="col-sm-6" ng-repeat="new in news3| filter:search" >
+
+      <img id="bildar-3" src="{{new.urlToImage}}">
+         
+            <h5 class="card-title">{{new.title}}</h5>
+            <p class="card-text">{{new.description}}</p>
+
+         
+        </div>
+      </section>
+      </section>
+
+
+  <br>
+
